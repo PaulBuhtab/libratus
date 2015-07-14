@@ -1,12 +1,12 @@
 				<?php // Show only favorite lists if multi option on favorites page
 				if (($_zp_gallery_page == 'favorites.php') && (getOption('favorites_multi'))) { ?>
 				<div id="favorites-box">
-					<h5 id="favorites-title"><i class="fa fa-star"></i>  <?php echo gettext('Favorites'); ?></h5>
+					<h5 id="favorites-title"><i class="fa fa-star"></i>  <?php echo gettext_th("Favorites", "libratus"); ?></h5>
 					<?php printFavoritesURL(null,'','',''); ?>	
 				</div>
 				<?php } else { ?>
 				<div id="favorites-box">
-					<h5 id="favorites-title"><i class="fa fa-star"></i> <?php echo gettext('Favorites'); ?></h5>
+					<h5 id="favorites-title"><i class="fa fa-star"></i> <?php echo gettext_th("Favorites", "libratus"); ?></h5>
 					<?php 
 					if ($_zp_gallery_page == 'album.php') { 
 						$current = $_zp_current_album; 
@@ -21,7 +21,7 @@
 					?>
 					<?php if (getOption('favorites_multi')) { ?>
 					<div id="favorites_help">
-						<i class="fa fa-question-circle"></i> <em><?php echo gettext('To add to a specific favorites list, type it in the input box before clicking add favorite.'); ?></em>
+						<i class="fa fa-question-circle"></i> <em><?php echo gettext_th("To add to a specific favorites list, type it in the input box before clicking add favorite.", "libratus"); ?></em>
 					</div><br />
 					<?php } 
 					} ?>

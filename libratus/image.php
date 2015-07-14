@@ -23,7 +23,13 @@
 			<div class="inner">
 				<div class="gallery pad fullimage">
 					<div class="gallery-fullimage">
+						<?php if (isImagePhoto()) { ?>
+						<a class="swipebox" title="<?php echo getBareImageTitle(); ?>" href="<?php echo html_encode(getDefaultSizedImage()); ?>">
+						<?php } ?>
 						<?php printDefaultSizedImage(getBareImageTitle(),'scale'); ?>
+						<?php if (isImagePhoto()) { ?>
+						</a>
+						<?php } ?>
 						<?php if (getImageData('copyright')) { ?><p class="image-copy"><i class="fa fa-copyright"></i> <?php echo getImageData('copyright'); ?></p><?php } ?>
 					</div>
 				</div>
@@ -31,15 +37,15 @@
 				<div class="gallery-sidebar pad">
 					<div class="single-nav">
 						<?php if (hasPrevImage()) { ?>
-						<a class="button prev-link" href="<?php echo html_encode(getPrevImageURL()).'#view'; ?>" title="<?php echo gettext("Previous Image"); ?>"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev Image"); ?></a>
+						<a class="button prev-link" href="<?php echo html_encode(getPrevImageURL()).'#view'; ?>" title="<?php echo gettext_th("Previous Image", "libratus"); ?>"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Image", "libratus"); ?></a>
 						<?php } else { ?>
-						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev Image"); ?></span>
+						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Image", "libratus"); ?></span>
 						<?php } ?>
 						
 						<?php if (hasNextImage()) { ?>
-						<a class="button next-link" href="<?php echo html_encode(getNextImageURL()).'#view'; ?>" title="<?php echo gettext("Next Image"); ?>"><?php echo gettext("Next Image"); ?> <i class="fa fa-caret-right"></i></a>
+						<a class="button next-link" href="<?php echo html_encode(getNextImageURL()).'#view'; ?>" title="<?php echo gettext_th("Next Image", "libratus"); ?>"><?php echo gettext_th("Next Image", "libratus"); ?> <i class="fa fa-caret-right"></i></a>
 						<?php } else { ?>
-						<span class="button next-link"><?php echo gettext("Next Image"); ?> <i class="fa fa-caret-right"></i></span>
+						<span class="button next-link"><?php echo gettext_th("Next Image", "libratus"); ?> <i class="fa fa-caret-right"></i></span>
 						<?php } ?>
 					</div>
 					<hr />
@@ -51,7 +57,7 @@
 					<?php } ?>
 					<hr />
 					<?php if (getOption('libratus_date_images')) { ?><div><i class="fa fa-calendar fa-fw"></i> <?php printImageDate(); ?></div><?php } ?>
-					<?php if (getOption('libratus_download')) { ?><div><i class="fa fa-download fa-fw"></i> <a href="<?php echo html_encode(getFullImageURL()); ?>" title="<?php echo gettext('Download'); ?>"><?php echo gettext('Download').' ('.getFullWidth().' x '.getFullHeight().')'; ?></a></div><?php } ?>
+					<?php if (getOption('libratus_download')) { ?><div><i class="fa fa-download fa-fw"></i> <a href="<?php echo html_encode(getFullImageURL()); ?>" title="<?php echo gettext_th("Download", "libratus"); ?>><?php echo gettext_th("Download", "libratus").' ('.getFullWidth().' x '.getFullHeight().')'; ?></a></div><?php } ?>
 					<?php if (function_exists('printSlideShowLink') && (getNumImages() > 1) && isImagePhoto()) { ?><hr /><div class="slideshow-link"><i class="fa fa-play fa-fw"></i> <?php printSlideShowLink(); ?></div><?php } ?>
 					
 					<?php if (getOption('libratus_social')) include ('inc-socialshare.php'); ?>
@@ -68,7 +74,7 @@
 							if (getGeoCoord($_zp_current_image)) {
 								setOption('gmap_width',null,false); // wipe out any px settings for plugin, flex set in css
 								setOption('gmap_height',300,false);
-								printGoogleMap(gettext('Show Google Map'),null,'show'); 
+								printGoogleMap(gettext_th("Show Google Map", "libratus"),null,'show'); 
 							}
 						}
 					} ?>
@@ -112,7 +118,7 @@
 		if ($resultcount != 0) { ?>
 		<div id="related-items-gallery" class="wrap clearfix">
 			<div class="inner pad">
-				<div class="bold-header"><?php echo gettext('Related Images'); ?></div>
+				<div class="bold-header"><?php echo gettext_th("Related Images", "libratus"); ?></div>
 				<div class="gallery-thumbs">
 					<?php $count = 0; if (is_numeric(getOption('libratus_related_maxnumber'))) { $number = getOption('libratus_related_maxnumber'); } else { $number = 10; } 
 					foreach ($result as $item) { 

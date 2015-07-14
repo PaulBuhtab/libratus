@@ -88,20 +88,20 @@
 						<?php endwhile; ?>
 					</div>
 				
-					<?php if (hasNextPage() || hasPrevPage()) { ?><div class="pad"><hr /><?php printPageListWithNav('« '.gettext('prev'),gettext('next').' »',false,true,'pagination'); ?></div><?php } ?>
+					<?php if (hasNextPage() || hasPrevPage()) { ?><div class="pad"><hr /><?php printPageListWithNav('« '.gettext_th("prev", "libratus"),gettext_th("next", "libratus").' »',false,true,'pagination'); ?></div><?php } ?>
 				</div>
 				
 				<div class="gallery-sidebar pad">
 					<?php if ($_zp_gallery_page == 'album.php') { ?>
 					<div class="single-nav">
 						<?php if ($prev = getPrevAlbum()) { ?>
-						<a class="button prev-link" href="<?php echo html_encode(getPrevAlbumURL()); ?>" title="<?php echo gettext('Prev album').': '.html_encode($prev->getTitle()); ?>"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev album"); ?></a>
+						<a class="button prev-link" href="<?php echo html_encode(getPrevAlbumURL()); ?>" title="<?php echo gettext_th("Prev album", "libratus").': '.html_encode($prev->getTitle()); ?>><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev album", "libratus"); ?></a>
 						<?php } else { ?>
-						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev Album"); ?></span>
+						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Album", "libratus"); ?></span>
 						<?php } ?>
 						
 						<?php if ($next = getNextAlbum()) { ?>
-						<a class="button next-link" href="<?php echo html_encode(getNextAlbumURL()); ?>" title="<?php echo gettext('Next album').': '.html_encode($next->getTitle()); ?>"><?php echo gettext("Next album"); ?> <i class="fa fa-caret-right"></i></a>
+						<a class="button next-link" href="<?php echo html_encode(getNextAlbumURL()); ?>" title="<?php echo gettext_th("Next album", "libratus").': '.html_encode($next->getTitle()); ?>"><?php echo gettext_th("Next album", "libratus"); ?> <i class="fa fa-caret-right"></i></a>
 						<?php } else { ?>
 						<span class="button next-link"><?php echo gettext("Next Album"); ?> <i class="fa fa-caret-right"></i></span>
 						<?php } ?>
@@ -110,8 +110,8 @@
 					<?php if ((getOption('libratus_date_albums')) && ($_zp_gallery_page == 'album.php')) { ?><div><i class="fa fa-calendar fa-fw"></i> <?php printAlbumDate(); ?></div><?php } ?>
 					<?php } ?>
 					
-					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext("albums"); ?></div><?php } ?>
-					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext("images"); ?></div><?php } ?>
+					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext_th("albums", "libratus"); ?></div><?php } ?>
+					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext_("images", "libratus"); ?></div><?php } ?>
 					<br />
 					<div class="desc"><?php printAlbumDesc(); ?></div>
 					<?php $singletag = getTags(); $tagstring = implode(', ', $singletag); 
@@ -124,7 +124,7 @@
 					
 					<?php if ($_zp_gallery_page == 'album.php') {
 					if ((class_exists('RSS')) && (getOption('RSS_album_image'))) { ?>
-					<div><i class="fa fa-rss fa-fw"></i> <?php printRSSLink('Collection','',gettext('Album RSS'),'',false); ?></div>
+					<div><i class="fa fa-rss fa-fw"></i> <?php printRSSLink('Collection','',gettext_th("Album RSS", "libratus"),'',false); ?></div>
 					<?php } 
 					if (getOption('libratus_social')) include ('inc-socialshare.php');
 					} ?>
@@ -149,7 +149,7 @@
 				<?php if (function_exists('printOpenStreetMap')) { 
 					printOpenStreetMap();
 				} else {
-					printGoogleMap(gettext('Show Google Map'),null,'show'); 
+					printGoogleMap(gettext_th("Show Google Map", "libratus"),null,'show'); 
 				} ?>
 			</div>
 		</div>
@@ -178,7 +178,7 @@
 		if ($resultcount != 0) { ?>
 		<div id="related-items-gallery" class="wrap clearfix">
 			<div class="inner pad">
-				<div class="bold-header"><?php echo gettext('Related Albums'); ?></div>
+				<div class="bold-header"><?php echo gettext_th("Related Albums", "libratus"); ?></div>
 				<div class="gallery-thumbs-large">
 					<?php $count = 0; if (is_numeric(getOption('libratus_related_maxnumber'))) { $number = getOption('libratus_related_maxnumber'); } else { $number = 10; } 
 					foreach ($result as $item) {

@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libratus-ru\n"
-"POT-Creation-Date: 2015-06-21 11:48+0300\n"
-"PO-Revision-Date: 2015-06-21 12:18+0300\n"
+"POT-Creation-Date: 2015-06-22 21:42+0300\n"
+"PO-Revision-Date: 2015-06-24 14:27+0300\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: http://laconic.website/ <info@laconic.website>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: 404.php:14
 msgid "404 Page Not Found"
-msgstr ""
+msgstr "404 страница не найдена"
 
 #: 404.php:22
 msgid "404 not found"
@@ -72,7 +72,7 @@ msgstr "изображения"
 msgid "Album RSS"
 msgstr "RSS альбома"
 
-#: album.php:152 image.php:71
+#: album.php:152 image.php:77
 msgid "Show Google Map"
 msgstr "Показать карту Google"
 
@@ -106,115 +106,115 @@ msgstr "Популярные изображения"
 
 #: archive.php:17 inc-archive-stats-menu.php:31
 msgid "Latest Images by Date"
-msgstr ""
+msgstr "Последние изображения по дате"
 
 #: archive.php:22
 msgid "Latest Images by mTime"
-msgstr ""
+msgstr "Последние изображения по времени"
 
 #: archive.php:27
 msgid "Latest Images by Publish Date"
-msgstr ""
+msgstr "Последние изображения по дате публикации"
 
 #: archive.php:32 inc-archive-stats-menu.php:58 inc-footer.php:162
 msgid "Most Rated Images"
-msgstr ""
+msgstr "Самые оцениваемые изображения"
 
 #: archive.php:37 inc-archive-stats-menu.php:67 inc-footer.php:180
 msgid "Top Rated Images"
-msgstr ""
+msgstr "Изображения с самыми высокими оценками"
 
 #: archive.php:43 inc-archive-stats-menu.php:85
 msgid "Latest Albums by ID"
-msgstr ""
+msgstr "Последние альбомы по ID"
 
 #: archive.php:48 inc-archive-stats-menu.php:76 inc-footer.php:200
 msgid "Popular Albums"
-msgstr ""
+msgstr "Популярные альбомы"
 
 #: archive.php:53 inc-archive-stats-menu.php:94
 msgid "Latest Albums by Date"
-msgstr ""
+msgstr "Последние альбомы по дате"
 
 #: archive.php:58
 msgid "Latest Albums by mTime"
-msgstr ""
+msgstr "Последние альбомы по времени"
 
 #: archive.php:63
 msgid "Latest Albums by Publish Date"
-msgstr ""
+msgstr "Последние альбомы по дате публикации"
 
 #: archive.php:68 inc-archive-stats-menu.php:121 inc-footer.php:272
 msgid "Most Rated Albums"
-msgstr ""
+msgstr "Самые оцениваемые альбомы"
 
 #: archive.php:73 inc-archive-stats-menu.php:130 inc-footer.php:290
 msgid "Top Rated Albums"
-msgstr ""
+msgstr "Альбомы с самыми высокими оценками"
 
 #: archive.php:78 inc-archive-stats-menu.php:139 inc-footer.php:308
 msgid "Latest Updated Albums"
-msgstr ""
+msgstr "Последние обновленные альбомы"
 
 #: archive.php:119
 msgid "Gallery Archive"
-msgstr ""
+msgstr "Архив галереи"
 
 #: archive.php:129
 msgid "News Archive"
-msgstr ""
+msgstr "Архив новостей"
 
 #: archive.php:138
 msgid "Tags"
-msgstr ""
+msgstr "Метки"
 
 #: contact.php:7 contact.php:16
 msgid "Contact Us"
-msgstr ""
+msgstr "Контакты"
 
-#: image.php:34
+#: image.php:40
 msgid "Previous Image"
-msgstr ""
-
-#: image.php:34 image.php:36
-msgid "Prev Image"
-msgstr ""
+msgstr "Предыдущее изображение"
 
 #: image.php:40 image.php:42
+msgid "Prev Image"
+msgstr "Пред. изображение"
+
+#: image.php:46 image.php:48
 msgid "Next Image"
-msgstr ""
+msgstr "Следующее изображение"
 
-#: image.php:54
+#: image.php:60
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
-#: image.php:115
+#: image.php:121
 msgid "Related Images"
-msgstr ""
+msgstr "Связанные изображения"
 
 #: inc-archive-stats-menu.php:5
 msgid "Image Sets"
-msgstr ""
+msgstr "Наборы изображений"
 
 #: inc-archive-stats-menu.php:6
 msgid "Album Sets"
-msgstr ""
+msgstr "Наборы альбомов"
 
 #: inc-archive-stats-menu.php:40
 msgid "Latest Images by Mtime"
-msgstr ""
+msgstr "Последние изображения по времени"
 
 #: inc-archive-stats-menu.php:49
 msgid "Latest Images by Published Date"
-msgstr ""
+msgstr "Последние изображения по дате публикации"
 
 #: inc-archive-stats-menu.php:103
 msgid "Latest Albums by Mtime"
-msgstr ""
+msgstr "Последние альбомы по времени"
 
 #: inc-archive-stats-menu.php:112
 msgid "Latest Albums by Published Date"
-msgstr ""
+msgstr "Последние альбомы по дате публикации"
 
 #: inc-favorites.php:4 inc-favorites.php:9
 msgid "Favorites"
@@ -228,66 +228,66 @@ msgstr ""
 
 #: inc-footer.php:10 password.php:5
 msgid "Login"
-msgstr ""
+msgstr "Вход"
 
 #: inc-footer.php:15
 msgid "Register"
-msgstr ""
+msgstr "Зарегистрироваться"
 
 #: inc-footer.php:23
 msgid "RSS News"
-msgstr ""
+msgstr "RSS Новости"
 
 #: inc-footer.php:25
 msgid "RSS Pages"
-msgstr ""
+msgstr "RSS Страницы"
 
 #: inc-footer.php:27
 msgid "RSS Gallery"
-msgstr ""
+msgstr "RSS Галерея"
 
 #: inc-footer.php:56
 msgid "Latest News"
-msgstr ""
+msgstr "Последние новости"
 
 #: inc-footer.php:63
 msgid "Latest Comments"
-msgstr ""
+msgstr "Последние комментарии"
 
 #: inc-footer.php:73 inc-footer.php:91 inc-footer.php:109 inc-footer.php:127
 #: inc-footer.php:145 inc-footer.php:163 inc-footer.php:181 inc-footer.php:201
 #: inc-footer.php:219 inc-footer.php:237 inc-footer.php:255 inc-footer.php:273
 #: inc-footer.php:291 inc-footer.php:309
 msgid "More"
-msgstr ""
+msgstr "Ещё"
 
 #: inc-footer.php:90
 msgid "Latest Images (ID)"
-msgstr ""
+msgstr "Последние изображения (по ID)"
 
 #: inc-footer.php:108
 msgid "Latest Images (mTime)"
-msgstr ""
+msgstr "Последние изображения (по времени)"
 
 #: inc-footer.php:126
 msgid "Latest Images (Date)"
-msgstr ""
+msgstr "Последние изображения (по дате)"
 
 #: inc-footer.php:144
 msgid "Latest Images (Pub. Date)"
-msgstr ""
+msgstr "Последние изображения (по дате публикации)"
 
 #: inc-footer.php:218
 msgid "Latest Albums (ID)"
-msgstr ""
+msgstr "Последние альбомы (по ID)"
 
 #: inc-footer.php:236
 msgid "Latest Albums (mTime)"
-msgstr ""
+msgstr "Последние альбомы (по времени)"
 
 #: inc-footer.php:254
 msgid "Latest Albums (Date)"
-msgstr ""
+msgstr "Последние альбомы (по дате)"
 
 #: inc-footer.php:341
 msgid "Facebook"
@@ -303,7 +303,7 @@ msgstr ""
 
 #: inc-header.php:10
 msgid "New Image"
-msgstr ""
+msgstr "Новое изображение"
 
 #: inc-header.php:11
 msgid "Geotagged"
@@ -311,273 +311,275 @@ msgstr ""
 
 #: inc-header.php:12
 msgid "Protected"
-msgstr ""
+msgstr "Защищено"
 
 #: inc-header.php:13
 msgid "Unpublished"
-msgstr ""
+msgstr "Не опубликовано"
 
 #: inc-header.php:17 inc-header.php:114
 msgid "Archive/Search"
-msgstr ""
+msgstr "Архив - поиск"
 
 #: inc-header.php:18
 msgid "Scroll to top"
-msgstr ""
+msgstr "Наверх"
 
 #: inc-header.php:98
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: inc-header.php:101 inc-header.php:121
 msgid "Gallery"
-msgstr ""
+msgstr "Галерея"
 
 #: inc-header.php:108 news.php:15 themeoptions.php:71
 msgid "News"
-msgstr ""
+msgstr "Новости"
 
 #: inc-header.php:118
 msgid "Contact"
-msgstr ""
+msgstr "Контакт"
 
 #: inc-socialshare.php:17
 msgid "Share: "
-msgstr ""
+msgstr "Поделиться:"
 
 #: inc-socialshare.php:18
 msgid "Share on Facebook"
-msgstr ""
+msgstr "Поделиться на Facebook"
 
 #: inc-socialshare.php:19
 msgid "Share on Twitter"
-msgstr ""
+msgstr "Поделиться в Twitter"
 
 #: inc-socialshare.php:20
 msgid "Share on Google+"
-msgstr ""
+msgstr "Поделиться на Google+"
 
 #: news.php:40 news.php:74
 msgid "Comments:"
-msgstr ""
+msgstr "Комментарии:"
 
 #: news.php:98 news.php:100
 msgid "Prev Article"
-msgstr ""
+msgstr "Предыдущая статья"
 
 #: news.php:104 news.php:106
 msgid "Next Article"
-msgstr ""
+msgstr "Следующая статья"
 
 #: news.php:123 news.php:128
 msgid "News Categories"
-msgstr ""
+msgstr "Категории новостей"
 
 #: news.php:124 news.php:129
 msgid "All News"
-msgstr ""
+msgstr "Все новости"
 
 #: pages.php:28
 msgid "Tags: "
-msgstr ""
+msgstr "Метки:"
 
 #: pages.php:47
 msgid "Last Updated: "
-msgstr ""
+msgstr "Обновлено:"
 
 #: password.php:14
 msgid "Password required"
-msgstr ""
+msgstr "Требуется пароль"
 
 #: password.php:26
 msgid "Register for this site"
-msgstr ""
+msgstr "Зарегистрироваться на этом сайте"
 
 #: password.php:29
 msgid "You are logged in"
-msgstr ""
+msgstr "Вы вошли на сайт"
 
 #: password.php:30
 msgid "Goto Homepage"
-msgstr ""
+msgstr "На главную страницу"
 
 #: register.php:6 register.php:15
 msgid "User Registration"
-msgstr ""
+msgstr "Регистрация пользователя"
 
 #: search.php:22 search.php:31
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
 #: search.php:50
 msgid "Sorry, no matches found. Try refining your search."
-msgstr ""
+msgstr "К сожалению, ничего не найдено. Попробуйте изменить услови поиска."
 
 #: search.php:115
 msgid "Page Result"
-msgstr ""
+msgstr "Результат страниц"
 
 #: search.php:126
 msgid "News Result"
-msgstr ""
+msgstr "Новости - результат"
 
 #: search.php:144
 #, php-format
 msgid "%1$u Hit for <em>%2$s</em>"
 msgid_plural "%1$u Hits for <em>%2$s</em>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%1$u Просмотр для <em>%2$s</em>"
+msgstr[1] "%1$u Просмотра для <em>%2$s</em>"
+msgstr[2] "%1$u Просмотров для <em>%2$s</em>"
 
 #: search.php:149
 msgid "news"
-msgstr ""
+msgstr "новости"
 
 #: search.php:150
 msgid "pages"
-msgstr ""
+msgstr "страницы"
 
 #: slideshow.php:12
 msgid "Slideshow"
-msgstr ""
+msgstr "Слайд шоу"
 
 #: themeoptions.php:69
 msgid "Albums"
-msgstr ""
+msgstr "Альбомы"
 
 #: themeoptions.php:70
 msgid "Images"
-msgstr ""
+msgstr "Изображения"
 
 #: themeoptions.php:72
 msgid "Pages"
-msgstr ""
+msgstr "Страницы"
 
 #: themeoptions.php:75 themeoptions.php:95
 msgid "Images - Popular"
-msgstr ""
+msgstr "Изображения - популярные"
 
 #: themeoptions.php:76 themeoptions.php:96
 msgid "Images - Latest by ID"
-msgstr ""
+msgstr "Изображения - последние по ID"
 
 #: themeoptions.php:77 themeoptions.php:97
 msgid "Images - Latest by Date"
-msgstr ""
+msgstr "Изображения - последние по дате"
 
 #: themeoptions.php:78 themeoptions.php:98
 msgid "Images - Latest by mtime"
-msgstr ""
+msgstr "Изображения - последние по времени"
 
 #: themeoptions.php:79 themeoptions.php:99
 msgid "Images - Latest by Publish Date"
-msgstr ""
+msgstr "Изображения - последние по дате публикации"
 
 #: themeoptions.php:80 themeoptions.php:100
 msgid "Images - Most Rated"
-msgstr ""
+msgstr "Изображения - самые оцениваемые"
 
 #: themeoptions.php:81 themeoptions.php:101
 msgid "Images - Top Rated"
-msgstr ""
+msgstr "Изображения - с наивысшими оценками"
 
 #: themeoptions.php:82 themeoptions.php:102
 msgid "Albums - Popular"
-msgstr ""
+msgstr "Альбомы - популярные"
 
 #: themeoptions.php:83 themeoptions.php:103
 msgid "Albums - Latest by ID"
-msgstr ""
+msgstr "Альбомы - Последние по ID"
 
 #: themeoptions.php:84 themeoptions.php:104
 msgid "Albums - Latest by Date"
-msgstr ""
+msgstr "Альбомы - Последние по дате"
 
 #: themeoptions.php:85 themeoptions.php:105
 msgid "Albums - Latest by mtime"
-msgstr ""
+msgstr "Альбомы - Последние по времени"
 
 #: themeoptions.php:86 themeoptions.php:106
 msgid "Albums - Latest by Publish Date"
-msgstr ""
+msgstr "Альбомы - Последние по дате публикации"
 
 #: themeoptions.php:87 themeoptions.php:107
 msgid "Albums - Most Rated"
-msgstr ""
+msgstr "Альбомы- самые оцениваемы"
 
 #: themeoptions.php:88 themeoptions.php:108
 msgid "Albums - Top Rated"
-msgstr ""
+msgstr "Альбомы - с наивысшими оценками"
 
 #: themeoptions.php:89 themeoptions.php:109
 msgid "Albums - Latest Updated"
-msgstr ""
+msgstr "Альбомы - Последние обновленные"
 
 #: themeoptions.php:92
 msgid "Gallery - Description"
-msgstr ""
+msgstr "Галерея - описание"
 
 #: themeoptions.php:93
 msgid "News - Latest"
-msgstr ""
+msgstr "новости - последние"
 
 #: themeoptions.php:94
 msgid "Comments - Latest"
-msgstr ""
+msgstr "Комментарии - последние"
 
 #: themeoptions.php:120
 msgid "Max Width of Site"
-msgstr ""
+msgstr "Максимальная ширина сайта"
 
 #: themeoptions.php:123
 msgid ""
 "Set the max-width of site in pixels.  Site is fluid but will not expand "
 "beyond this width."
 msgstr ""
+"Установите максимальную шириную сайта в пикселях. Сайт использует резиновую "
+"вёрстку, но не будет расширяться сверх этого предела"
 
 #: themeoptions.php:124
 msgid "Home Slideshow Type"
-msgstr ""
+msgstr "Слайдшоу на Главной - тип"
 
 #: themeoptions.php:127
 msgid "Random"
-msgstr ""
+msgstr "Случайно"
 
 #: themeoptions.php:128
 msgid "Popular"
-msgstr ""
+msgstr "Популярные"
 
 #: themeoptions.php:129
 msgid "Latest by ID"
-msgstr ""
+msgstr "Последние по ID"
 
 #: themeoptions.php:130
 msgid "Latest by Date"
-msgstr ""
+msgstr "Последние по дате"
 
 #: themeoptions.php:131
 msgid "Latest by mtime"
-msgstr ""
+msgstr "Последние по времени"
 
 #: themeoptions.php:132
 msgid "Latest by Publish Date"
-msgstr ""
+msgstr "Последние по дате публикации"
 
 #: themeoptions.php:133
 msgid "Most Rated"
-msgstr ""
+msgstr "Самые оцениваемые"
 
 #: themeoptions.php:134
 msgid "Top Rated"
-msgstr ""
+msgstr "С самыми высокими оценками"
 
 #: themeoptions.php:135
 msgid "Select what image statistic to show on the frontpage slideshow."
-msgstr ""
+msgstr "Какую статистику изображения показывать на слайдшоу главной страницы"
 
 #: themeoptions.php:136
 msgid "Home Slideshow from Album"
-msgstr ""
+msgstr "Слайдшоу на Главной странице для альбома"
 
 #: themeoptions.php:139
 msgid ""
@@ -586,18 +588,23 @@ msgid ""
 "this option to ensure there are images that meet the statistic and they are "
 "viewable (rights), otherwise no images will show."
 msgstr ""
+"Можно выбрать конкрентный альбом в качестве источника для слайдшоу на "
+"главной странице. По умолчанию будет \"Вся галлерея\", т.е. все имеющиеся "
+"изображения. При использовании данной опции нужно убедиться что изображения "
+"удовлетворяют требованиям статистики и что они доступны для просмотра "
+"(права), иначе они не будут показаны. "
 
 #: themeoptions.php:140
 msgid "Slideshow Interval"
-msgstr ""
+msgstr "Интервал для слайд шоу"
 
 #: themeoptions.php:143
 msgid "In milliseconds (default 5000)."
-msgstr ""
+msgstr "В миллисекундах (по умолчанию 5000)"
 
 #: themeoptions.php:144
 msgid "Home Page Full-width"
-msgstr ""
+msgstr "Главная страница - во всю ширину"
 
 #: themeoptions.php:146
 msgid ""
@@ -607,7 +614,7 @@ msgstr ""
 
 #: themeoptions.php:147
 msgid "Show Date"
-msgstr ""
+msgstr "Показывать дату"
 
 #: themeoptions.php:150
 msgid ""
@@ -618,7 +625,7 @@ msgstr ""
 
 #: themeoptions.php:151
 msgid "Download Button"
-msgstr ""
+msgstr "Кнопка скачать"
 
 #: themeoptions.php:153
 msgid ""
@@ -641,7 +648,7 @@ msgstr ""
 
 #: themeoptions.php:157
 msgid "Custom CSS"
-msgstr ""
+msgstr "Пользовательский CSS"
 
 #: themeoptions.php:160
 msgid ""
@@ -667,25 +674,29 @@ msgstr ""
 
 #: themeoptions.php:167
 msgid "Universal"
-msgstr ""
+msgstr "Универсальный"
 
 #: themeoptions.php:167
 msgid "Classic"
-msgstr ""
+msgstr "Классический"
 
 #: themeoptions.php:168
 msgid ""
 "Select what type of analytics you are using. See your Google analytics "
 "account for explanations."
 msgstr ""
+"Выберите, какую веб аналитику вы используете. Объяснения вы можете найти в "
+"своём аккаунте Google аналитики."
 
 #: themeoptions.php:169
 msgid "Facebook Link"
-msgstr ""
+msgstr "Ссылка Facebook"
 
 #: themeoptions.php:172
 msgid "Enter your full Facebook page link (http://....). Leave blank to omit."
 msgstr ""
+"Введите полную ссылку на страницу Facebook  (http://....). Оставьте пустым, "
+"чтобы пропустить."
 
 #: themeoptions.php:173
 msgid "Twitter Link"
@@ -694,6 +705,8 @@ msgstr ""
 #: themeoptions.php:176
 msgid "Enter your full Twitter page link (http://....). Leave blank to omit."
 msgstr ""
+"Введите полную ссылку на страницу Twitter  (http://....). Оставьте пустым, "
+"чтобы пропустить."
 
 #: themeoptions.php:177
 msgid "Google+ Link"
@@ -702,14 +715,17 @@ msgstr ""
 #: themeoptions.php:180
 msgid "Enter your full Google+ page link (http://....). Leave blank to omit."
 msgstr ""
+"Введите полную ссылку на страницу Google+  (http://....). Оставьте пустым, "
+"чтобы пропустить."
 
 #: themeoptions.php:181
 msgid "Copyright Text"
-msgstr ""
+msgstr "Текст копирайта"
 
 #: themeoptions.php:184
 msgid "Edit text for footer copyright. Leave blank to omit."
 msgstr ""
+"Введите текст копирайта для подвала. Оставьте пустым, чтобы пропустить."
 
 #: themeoptions.php:185
 msgid "Statistical Pages on Archive"
@@ -720,6 +736,8 @@ msgid ""
 "Select which statistical pages to show in the archive side menu and homepage "
 "side menu (optional), if any."
 msgstr ""
+"Выберите, какие страницы статистики показывать в боковом меню на странице "
+"архива и на главной (опционально), и показывать ли вообще."
 
 #: themeoptions.php:189
 msgid "Statistical Pages Number"
@@ -733,11 +751,11 @@ msgstr ""
 
 #: themeoptions.php:193
 msgid "Bottom Stats Items per Row"
-msgstr ""
+msgstr "Статистика - внизу - число элементов в строке"
 
 #: themeoptions.php:195
 msgid "Disable"
-msgstr ""
+msgstr "Запретить"
 
 #: themeoptions.php:195
 msgid "1"
@@ -756,22 +774,26 @@ msgid "4"
 msgstr ""
 
 #: themeoptions.php:196
+#, fuzzy
 msgid "Select how many items per row for the bottom stats, if any."
-msgstr ""
+msgstr "Число элементов в строке внизу станицы, если есть."
 
 #: themeoptions.php:197
 msgid "Bottom Stats"
-msgstr ""
+msgstr "Статистика - внизу"
 
 #: themeoptions.php:200
 msgid ""
 "Select what to show in the bottom row, if not disabled above. Recommended to "
 "choose multiples of the option items per row."
 msgstr ""
+"Выберите, что показывать в нижней строке, если не запрещенр выше. "
+"Рекомендуется выбрать несколько опций на строку."
 
 #: themeoptions.php:201
+#, fuzzy
 msgid "Number of Images in Bottom Stats"
-msgstr ""
+msgstr "Число изображений внизу страницы"
 
 #: themeoptions.php:204
 msgid ""
@@ -781,7 +803,7 @@ msgstr ""
 
 #: themeoptions.php:205
 msgid "Related Max Number"
-msgstr ""
+msgstr "Максимальное число связанных"
 
 #: themeoptions.php:208
 msgid ""

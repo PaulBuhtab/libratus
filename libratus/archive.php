@@ -4,78 +4,78 @@ if (isset($_GET['set'])) {
 	switch ($_GET['set']) {
 		case 'latestimagesbyid':
 			$stat_type = 'images';
-			$stat_title = gettext('Latest Images by ID');
+			$stat_title = gettext_th("Latest Images by ID", "libratus");
 			$stat_option = 'latest';
 			break;
 		case 'popularimages':
 			$stat_type = 'images';
-			$stat_title = gettext('Popular Images');
+			$stat_title = gettext_th("Popular Images", "libratus");
 			$stat_option = 'popular';
 			break;
 		case 'latestimagesbydate':
 			$stat_type = 'images';
-			$stat_title = gettext('Latest Images by Date');
+			$stat_title = gettext_th("Latest Images by Date", "libratus");
 			$stat_option = 'latest-date';
 			break;
 		case 'latestimagesbymtime':
 			$stat_type = 'images';
-			$stat_title = gettext('Latest Images by mTime');
+			$stat_title = gettext_th("Latest Images by mTime", "libratus");
 			$stat_option = 'latest-mtime';
 			break;
 		case 'latestimagesbypdate':
 			$stat_type = 'images';
-			$stat_title = gettext('Latest Images by Publish Date');
+			$stat_title = gettext_th("Latest Images by Publish Date", "libratus");
 			$stat_option = 'latest-publishdate';
 			break;
 		case 'mostratedimages':
 			$stat_type = 'images';
-			$stat_title = gettext('Most Rated Images');
+			$stat_title = gettext_th("Most Rated Images", "libratus");
 			$stat_option = 'mostrated';
 			break;
 		case 'topratedimages':
 			$stat_type = 'images';
-			$stat_title = gettext('Top Rated Images');
+			$stat_title = gettext_th("Top Rated Images", "libratus");
 			$stat_option = 'toprated';
 			break;
 			
 		case 'latestalbumsbyid':
 			$stat_type = 'albums';
-			$stat_title = gettext('Latest Albums by ID');
+			$stat_title = gettext_th("Latest Albums by ID", "libratus");
 			$stat_option = 'latest';
 			break;
 		case 'popularalbums':
 			$stat_type = 'albums';
-			$stat_title = gettext('Popular Albums');
+			$stat_title = gettext_th("Popular Albums", "libratus");
 			$stat_option = 'popular';
 			break;
 		case 'latestalbumsbydate':
 			$stat_type = 'albums';
-			$stat_title = gettext('Latest Albums by Date');
+			$stat_title = gettext_th("Latest Albums by Date", "libratus");
 			$stat_option = 'latest-date';
 			break;
 		case 'latestalbumsbymtime':
 			$stat_type = 'albums';
-			$stat_title = gettext('Latest Albums by mTime');
+			$stat_title = gettext_th("Latest Albums by mTime", "libratus");
 			$stat_option = 'latest-mtime';
 			break;
 		case 'latestalbumsbypdate':
 			$stat_type = 'albums';
-			$stat_title = gettext('Latest Albums by Publish Date');
+			$stat_title = gettext_th("Latest Albums by Publish Date");
 			$stat_option = 'latest-publishdate';
 			break;
 		case 'mostratedalbums':
 			$stat_type = 'albums';
-			$stat_title = gettext('Most Rated Albums');
+			$stat_title = gettext_th("Most Rated Albums", "libratus");
 			$stat_option = 'mostrated';
 			break;
 		case 'topratedalbums':
 			$stat_type = 'albums';
-			$stat_title = gettext('Top Rated Albums');
+			$stat_title = gettext_th("Top Rated Albums", "libratus");
 			$stat_option = 'toprated';
 			break;
 		case 'latestupdatedalbums':
 			$stat_type = 'albums';
-			$stat_title = gettext('Latest Updated Albums');
+			$stat_title = gettext_th("Latest Updated Albums", "libratus");
 			$stat_option = 'latestupdated';
 			break;	
 		default:
@@ -96,7 +96,7 @@ include ('inc-header.php'); ?>
 
 		<div id="page-header" class="wrap" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(<?php echo $bg; ?>);">
 			<div class="inner">
-				<h1><?php echo gettext('Archive'); ?></h1>
+				<h1><?php echo gettext_th("Archive", "libratus"); ?></h1>
 			</div>
 		</div>
 		
@@ -106,7 +106,7 @@ include ('inc-header.php'); ?>
 				<div class="pad" id="breadcrumb">
 					<a href="<?php echo getGalleryIndexURL(); ?>"><i class="fa fa-home"></i>&nbsp;<?php printGalleryTitle(); ?></a>&nbsp;/
 					<?php printParentBreadcrumb('',' / ',' / '); ?>
-					<?php echo gettext('Archive'); ?>
+					<?php echo gettext_th("Archive", "libratus"); ?>
 				</div>
 			</div>
 		</div>
@@ -116,7 +116,7 @@ include ('inc-header.php'); ?>
 				<div class="gallery archive pad">
 					<?php if (getOption('libratus_date_images')) { ?>
 					<div class="block archive">	
-						<h5><?php echo gettext('Gallery Archive'); ?></h5>
+						<h5><?php echo gettext_th("Gallery Archive", "libratus"); ?></h5>
 						<div class="archive-cols">
 							<?php printAllDates('archive','year','month'); ?>
 						</div>
@@ -126,7 +126,7 @@ include ('inc-header.php'); ?>
 					<?php if ($zenpage && ZP_NEWS_ENABLED) { ?>
 					<?php if ((getNumNews(true) > 0) && (getOption('libratus_date_news'))) { ?>
 					<div class="block archive">	
-						<h5><?php echo gettext('News Archive'); ?></h5>
+						<h5><?php echo gettext_th("News Archive", "libratus"); ?></h5>
 						<div class="archive-cols">
 							<?php printNewsArchive('archive','year','month'); ?>
 						</div>
@@ -135,7 +135,7 @@ include ('inc-header.php'); ?>
 					} ?>
 					
 					<div class="block archive">	
-						<h5><?php echo gettext('Tags'); ?></h5>
+						<h5><?php echo gettext_th("Tags", "libratus"); ?></h5>
 						<div class="archive-cols">
 							<?php printAllTagsAs('list','year','results',true,true,2,50,1); ?>
 						</div>
@@ -144,7 +144,7 @@ include ('inc-header.php'); ?>
 				</div>
 
 				<div class="gallery-sidebar pad">
-					<?php printSearchForm('','search',$_zp_themeroot.'/images/magnifying_glass_16x16.png',gettext('Search gallery'),$_zp_themeroot.'/images/list_12x11.png'); ?>	
+					<?php printSearchForm('','search',$_zp_themeroot.'/images/magnifying_glass_16x16.png',gettext_th("Search gallery", "libratus"),$_zp_themeroot.'/images/list_12x11.png'); ?>	
 					<hr />
 					<?php include ('inc-archive-stats-menu.php'); ?> 	
 				</div>
