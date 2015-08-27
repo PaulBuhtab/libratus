@@ -305,7 +305,7 @@
 					if ($c==getOption('libratus_bottom_stats_perrow')) { echo '</div><div class="row">'; $c=0; } ?>
 					<div class="<?php echo $class; ?>">
 						<h5>
-							<?php echo gettext_th("Latest Updated Albums"); ?>
+							<?php echo gettext_th("Latest Updated Albums", "libratus"); ?>
 							<?php if (getOption('libratus_stats_albums_latestupdated')) { ?>&nbsp;<a class="stats-more" title="<?php echo gettext_th("More", "libratus"); ?> href="<?php echo getCustomPageURL('archive').'?set=latestupdatedalbums'; ?>"><i class="fa fa-caret-right"></i></a><?php } ?>
 						</h5>
 						<?php $items = getAlbumStatistic($number,'latestupdated', '', false, 1); ?>

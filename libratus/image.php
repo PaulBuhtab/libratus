@@ -57,7 +57,7 @@
 					<?php } ?>
 					<hr />
 					<?php if (getOption('libratus_date_images')) { ?><div><i class="fa fa-calendar fa-fw"></i> <?php printImageDate(); ?></div><?php } ?>
-					<?php if (getOption('libratus_download')) { ?><div><i class="fa fa-download fa-fw"></i> <a href="<?php echo html_encode(getFullImageURL()); ?>" title="<?php echo gettext_th("Download", "libratus"); ?>><?php echo gettext_th("Download", "libratus").' ('.getFullWidth().' x '.getFullHeight().')'; ?></a></div><?php } ?>
+					<?php if (getOption('libratus_download')) { ?><div><i class="fa fa-download fa-fw"></i> <a href="<?php echo html_encode(getFullImageURL()); ?>" title="<?php echo gettext_th("Download", "libratus"); ?>"><?php echo gettext_th("Download", "libratus").' ('.getFullWidth().' x '.getFullHeight().')'; ?></a></div><?php } ?>
 					<?php if (function_exists('printSlideShowLink') && (getNumImages() > 1) && isImagePhoto()) { ?><hr /><div class="slideshow-link"><i class="fa fa-play fa-fw"></i> <?php printSlideShowLink(); ?></div><?php } ?>
 					
 					<?php if (getOption('libratus_social')) include ('inc-socialshare.php'); ?>

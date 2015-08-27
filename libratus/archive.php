@@ -60,7 +60,7 @@ if (isset($_GET['set'])) {
 			break;
 		case 'latestalbumsbypdate':
 			$stat_type = 'albums';
-			$stat_title = gettext_th("Latest Albums by Publish Date");
+			$stat_title = gettext_th("Latest Albums by Publish Date", "libratus");
 			$stat_option = 'latest-publishdate';
 			break;
 		case 'mostratedalbums':

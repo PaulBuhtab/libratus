@@ -9,7 +9,7 @@ if (function_exists('printSlideShow')) {
 		<head>
 			<?php zp_apply_filter('theme_head'); ?>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-			<title><?php printBareGalleryTitle(); ?> <?php echo gettext("Slideshow"); ?></title>
+			<title><?php printBareGalleryTitle(); ?> <?php echo gettext_th("Slideshow", "libratus"); ?></title>
 			<meta charset="<?php echo LOCAL_CHARSET; ?>">
 			<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/style.css" type="text/css" />
 			<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/slideshow.css" type="text/css" />

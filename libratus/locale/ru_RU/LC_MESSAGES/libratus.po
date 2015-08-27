@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libratus-ru\n"
 "POT-Creation-Date: 2015-06-22 21:42+0300\n"
-"PO-Revision-Date: 2015-06-24 14:27+0300\n"
+"PO-Revision-Date: 2015-08-27 14:58+0300\n"
 "Last-Translator: \n"
 "Language-Team: http://laconic.website/ <info@laconic.website>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.1\n"
-"X-Poedit-Basepath: ..\\..\\..\\\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -218,13 +218,15 @@ msgstr "Последние альбомы по дате публикации"
 
 #: inc-favorites.php:4 inc-favorites.php:9
 msgid "Favorites"
-msgstr ""
+msgstr "Избранное"
 
 #: inc-favorites.php:24
 msgid ""
 "To add to a specific favorites list, type it in the input box before "
 "clicking add favorite."
 msgstr ""
+"Чтобы добавить в конкретный список \"Избранное\", введите название списка в "
+"поле ввода прежде чем нажать \"Добавить в избранное\""
 
 #: inc-footer.php:10 password.php:5
 msgid "Login"
@@ -307,7 +309,7 @@ msgstr "Новое изображение"
 
 #: inc-header.php:11
 msgid "Geotagged"
-msgstr ""
+msgstr "Геоданные"
 
 #: inc-header.php:12
 msgid "Protected"
@@ -607,10 +609,13 @@ msgid "Home Page Full-width"
 msgstr "Главная страница - во всю ширину"
 
 #: themeoptions.php:146
+#, fuzzy
 msgid ""
 "Check for album thumbs to full-width on home page (no sidebar statistics "
 "menu with search)."
 msgstr ""
+"Миниатюры альбомов на всю ширину на домашней странице (без бокового меню "
+"статистики и поиска)"
 
 #: themeoptions.php:147
 msgid "Show Date"
@@ -622,6 +627,10 @@ msgid ""
 "\"pages\", libratus shows last updated date if checked. Note that you need "
 "to show dates on images, or on news, for those to show on the archive page."
 msgstr ""
+"Отметьте, чтобы отображались даты в альбомах, изображениях и страницах. На "
+"\"страницах\" libratus показывает дату последнего обновления, если отмечено. "
+"Необходимо отображать даты на изображениях или новостях, чтобы они "
+"отображались на странице Архив."
 
 #: themeoptions.php:151
 msgid "Download Button"
@@ -699,8 +708,9 @@ msgstr ""
 "чтобы пропустить."
 
 #: themeoptions.php:173
+#, fuzzy
 msgid "Twitter Link"
-msgstr ""
+msgstr "Twitter ссылка"
 
 #: themeoptions.php:176
 msgid "Enter your full Twitter page link (http://....). Leave blank to omit."
@@ -709,8 +719,9 @@ msgstr ""
 "чтобы пропустить."
 
 #: themeoptions.php:177
+#, fuzzy
 msgid "Google+ Link"
-msgstr ""
+msgstr "Google+ ссылка"
 
 #: themeoptions.php:180
 msgid "Enter your full Google+ page link (http://....). Leave blank to omit."
@@ -729,7 +740,7 @@ msgstr ""
 
 #: themeoptions.php:185
 msgid "Statistical Pages on Archive"
-msgstr ""
+msgstr "Страницы статистики для Архива"
 
 #: themeoptions.php:188
 msgid ""
@@ -741,13 +752,15 @@ msgstr ""
 
 #: themeoptions.php:189
 msgid "Statistical Pages Number"
-msgstr ""
+msgstr "Число страниц статистики"
 
 #: themeoptions.php:192
 msgid ""
 "Enter the number of images or albums to show for each statistic on the "
 "archive pages (default 30)."
 msgstr ""
+"Укажите сколько изображений или альбомов должно отображаться для каждой "
+"статистики на страницах Архива (по умолчанию 30)"
 
 #: themeoptions.php:193
 msgid "Bottom Stats Items per Row"
@@ -800,13 +813,18 @@ msgid ""
 "Enter the number of images or albums to show for each selected statistic in "
 "the bottom footer."
 msgstr ""
+"Число изображений или альбомов для каждой выбранной статистики в  внизу "
+"страницы в \"подвале\"."
 
 #: themeoptions.php:205
 msgid "Related Max Number"
 msgstr "Максимальное число связанных"
 
 #: themeoptions.php:208
+#, fuzzy
 msgid ""
 "Enter the MAX number of related albums and images to show on their "
 "respective pages (if plugin is enabled)."
 msgstr ""
+"Максимальное число связанных альбомов и изображений для отображения на "
+"относящихся к ним страницам (если плагин разрешён)."

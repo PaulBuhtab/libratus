@@ -19,7 +19,7 @@ if ($total == 0) {
 
 		<div id="page-header" class="wrap" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(<?php echo $bg; ?>);">
 			<div class="inner">
-				<h1><?php echo gettext('Search'); ?></h1>
+				<h1><?php echo gettext_th("Search", "libratus"); ?></h1>
 			</div>
 		</div>
 
@@ -28,7 +28,7 @@ if ($total == 0) {
 				<?php echo $quickmenu; ?>
 				<div class="pad" id="breadcrumb">
 					<a href="<?php echo getGalleryIndexURL(); ?>"><i class="fa fa-home"></i>&nbsp;<?php printGalleryTitle(); ?></a>&nbsp;/
-					<?php printParentBreadcrumb('',' / ',' / '); ?> <?php echo gettext('Search'); ?>
+					<?php printParentBreadcrumb('',' / ',' / '); ?> <?php echo gettext_th("Search", "libratus"); ?>
 				</div>
 			</div>
 		</div>
@@ -47,7 +47,7 @@ if ($total == 0) {
 						$searchwords .= $searchdate;
 					}
 					if ($total < 1 ) { ?>
-					<br /><h5><?php echo gettext('Sorry, no matches found. Try refining your search.'); ?></h5>
+					<br /><h5><?php echo gettext_th("Sorry, no matches found. Try refining your search.", "libratus"); ?></h5>
 					<?php } ?>
 					
 					<?php if (isAlbumPage()) { ?>
@@ -102,7 +102,7 @@ if ($total == 0) {
 						<?php endwhile; ?>
 					</div>
 				
-					<?php if (hasNextPage() || hasPrevPage()) { ?><div class="pad"><hr /><?php printPageListWithNav('« '.gettext('prev'),gettext('next').' »',false,true,'pagination'); ?></div><?php } ?>
+					<?php if (hasNextPage() || hasPrevPage()) { ?><div class="pad"><hr /><?php printPageListWithNav('« '.gettext_th("prev", "libratus"),gettext_th("next", "libratus").' »',false,true,'pagination'); ?></div><?php } ?>
 					
 					<?php if ((($numalbums + $numimages) > 0) && ($zpcount > 0)) echo '<div class="pad"><hr /></div>'; ?>
 					
@@ -112,7 +112,7 @@ if ($total == 0) {
 					while (next_page()) { ?>
 						<div class="one-half column">
 							<div class="news-clip">
-								<div class="bold-header"><a href="<?php echo html_encode($_zp_current_zenpage_page->getLink()); ?>"><?php printPageTitle(); ?></a> <small><em><i title="<?php echo gettext('Page Result'); ?>" class="fa fa-copy fa-fw"></i></em></small></div>
+								<div class="bold-header"><a href="<?php echo html_encode($_zp_current_zenpage_page->getLink()); ?>"><?php printPageTitle(); ?></a> <small><em><i title="<?php echo gettext_th("Page Result", "libratus"); ?>" class="fa fa-copy fa-fw"></i></em></small></div>
 								<div class="search-excerpt"><?php echo shortenContent(strip_tags(getPageContent()),200,getOption('zenpage_textshorten_indicator')); ?></div>
 							</div>
 						</div>
@@ -123,7 +123,7 @@ if ($total == 0) {
 					while (next_news()) { ?>
 						<div class="one-half column">
 							<div class="news-clip">
-								<div class="bold-header"><?php printNewsURL(); ?> <small><em><i title="<?php echo gettext('News Result'); ?>" class="fa fa-newspaper-o fa-fw"></i></em></small></div>
+								<div class="bold-header"><?php printNewsURL(); ?> <small><em><i title="<?php echo gettext_th("News Result", "libratus"); ?>" class="fa fa-newspaper-o fa-fw"></i></em></small></div>
 								<div class="search-excerpt"><?php echo shortenContent(strip_tags(getNewsContent()),200,getOption('zenpage_textshorten_indicator')); ?></div>
 							</div>
 						</div>
@@ -136,7 +136,7 @@ if ($total == 0) {
 				</div>
 				
 				<div class="gallery-sidebar pad">
-					<?php printSearchForm('','search',$_zp_themeroot.'/images/magnifying_glass_16x16.png',gettext('Search gallery'),$_zp_themeroot.'/images/list_12x11.png'); ?>	
+					<?php printSearchForm('','search',$_zp_themeroot.'/images/magnifying_glass_16x16.png',gettext_th("Search gallery", "libratus"),$_zp_themeroot.'/images/list_12x11.png'); ?>	
 					
 
 					<?php if ($total > 0 ) { ?>
@@ -144,10 +144,10 @@ if ($total == 0) {
 					<div class="bold-header"><?php printf(ngettext('%1$u Hit for <em>%2$s</em>','%1$u Hits for <em>%2$s</em>',$total), $total, html_encode($searchwords));?></div>
 					<?php } ?>
 
-					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext("albums"); ?></div><?php } ?>
-					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext("images"); ?></div><?php } ?>
-					<?php if ($numnews > 0) { ?><div><i class="fa fa-newspaper-o fa-fw"></i> <?php echo $numnews.' '.gettext("news"); ?></div><?php } ?>
-					<?php if ($numpages > 0) { ?><div><i class="fa fa-copy fa-fw"></i> <?php echo $numpages.' '.gettext("pages"); ?></div><?php } ?>
+					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext_th("albums", "libratus"); ?></div><?php } ?>
+					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext_th("images", "libratus"); ?></div><?php } ?>
+					<?php if ($numnews > 0) { ?><div><i class="fa fa-newspaper-o fa-fw"></i> <?php echo $numnews.' '.gettext_th("news", "libratus"); ?></div><?php } ?>
+					<?php if ($numpages > 0) { ?><div><i class="fa fa-copy fa-fw"></i> <?php echo $numpages.' '.gettext_th("pages", "libratus"); ?></div><?php } ?>
 					
 					
 					<?php if ($numimages > 1 && function_exists('printSlideShowLink')) { ?><hr /><div class="slideshow-link"><i class="fa fa-play fa-fw"></i> <?php printSlideShowLink(); ?></div><?php } ?>

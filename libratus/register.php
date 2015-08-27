@@ -3,7 +3,7 @@ include ('inc-header.php'); ?>
 
 		<div id="page-header" class="wrap" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(<?php echo $bg; ?>);">
 			<div class="inner">
-				<h1><?php echo gettext('User Registration') ?></h1>
+				<h1><?php echo gettext_th("User Registration", "libratus") ?></h1>
 			</div>
 		</div>
 		
@@ -12,7 +12,7 @@ include ('inc-header.php'); ?>
 				<?php echo $quickmenu; ?>
 				<div class="pad" id="breadcrumb">
 					<a href="<?php echo getGalleryIndexURL(); ?>"><i class="fa fa-home"></i>&nbsp;<?php printGalleryTitle(); ?></a>&nbsp;/
-					<?php echo gettext('User Registration') ?>
+					<?php echo gettext_th("User Registration", "libratus") ?>
 				</div>
 			</div>
 		</div>

@@ -25,7 +25,7 @@ include('inc-header.php'); ?>
 					<?php printPageContent(); ?>
 					<?php $singletag = getTags(); $tagstring = implode(', ', $singletag); 
 					if (strlen($tagstring) > 0) { ?>
-					<div class="block"><em><?php echo gettext('Tags: '); ?></em><?php printTags('links','','taglist', ', '); ?></div>
+					<div class="block"><em><?php echo gettext_th("Tags: ", "libratus"); ?></em><?php printTags('links','','taglist', ', '); ?></div>
 					<?php } ?>
 					<?php printCodeblock(); ?>
 				</div>
@@ -44,7 +44,7 @@ include('inc-header.php'); ?>
 					</div>
 					<hr />
 					<?php } ?>
-					<?php if (getOption('libratus_date_pages')) { ?><em><?php echo gettext('Last Updated: '); ?></em><?php echo getPageLastChangeDate(); ?><hr /><?php } ?>
+					<?php if (getOption('libratus_date_pages')) { ?><em><?php echo gettext_th("Last Updated: ", "libratus"); ?></em><?php echo getPageLastChangeDate(); ?><hr /><?php } ?>
 					
 					<?php if (getPageExtraContent()) printPageExtraContent(); ?>
 					<?php if (getOption('libratus_social')) include ('inc-socialshare.php'); ?>

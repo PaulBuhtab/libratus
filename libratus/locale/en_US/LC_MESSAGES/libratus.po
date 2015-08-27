@@ -1,18 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: libratus-en\n"
-"POT-Creation-Date: 2015-07-07 21:23+0300\n"
-"PO-Revision-Date: 2015-07-07 21:24+0300\n"
+"POT-Creation-Date: 2015-06-22 21:42+0300\n"
+"PO-Revision-Date: 2015-08-24 17:19+0300\n"
 "Last-Translator: \n"
 "Language-Team: http://laconic.website/ <info@laconic.website>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-Basepath: ../../..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: css\n"
@@ -20,9 +19,288 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: js\n"
 "X-Poedit-SearchPathExcluded-3: locale\n"
 
+#: 404.php:5
+msgid "404"
+msgstr "404"
+
+#: 404.php:14
+msgid "404 Page Not Found"
+msgstr "404 Page Not Found"
+
+#: 404.php:22
+msgid "404 not found"
+msgstr "404 not found"
+
+#: 404.php:23
+msgid "The page you are requesting cannot be found."
+msgstr "The page you are requesting cannot be found."
+
+#: album.php:91 index.php:83 news.php:89 search.php:105
+msgid "prev"
+msgstr "prev"
+
+#: album.php:91 index.php:83 news.php:89 search.php:105
+msgid "next"
+msgstr "next"
+
+#: album.php:98
+msgid "Prev album"
+msgstr "Prev album"
+
+#: album.php:100
+msgid "Prev Album"
+msgstr "Prev Album"
+
+#: album.php:104
+msgid "Next album"
+msgstr "Next album"
+
 #: album.php:106
 msgid "Next Album"
 msgstr "Next Album"
+
+#: album.php:113 search.php:147
+msgid "albums"
+msgstr "albums"
+
+#: album.php:114 search.php:148
+msgid "images"
+msgstr "images"
+
+#: album.php:127
+msgid "Album RSS"
+msgstr "Album RSS"
+
+#: album.php:152 image.php:77
+msgid "Show Google Map"
+msgstr "Show Google Map"
+
+#: album.php:181
+msgid "Related Albums"
+msgstr "Related Albums"
+
+#: archive-stats.php:5 archive-stats.php:15 archive.php:99 archive.php:109
+msgid "Archive"
+msgstr "Archive"
+
+#: archive-stats.php:53 archive-stats.php:97
+msgid "total votes"
+msgstr "total votes"
+
+#: archive-stats.php:69 archive-stats.php:110 archive-stats.php:115
+msgid "Sorry, no statistical page to show..."
+msgstr "Sorry, no statistical page to show..."
+
+#: archive-stats.php:121 archive.php:147 index.php:88 search.php:139
+msgid "Search gallery"
+msgstr "Search gallery"
+
+#: archive.php:7 inc-archive-stats-menu.php:22
+msgid "Latest Images by ID"
+msgstr "Latest Images by ID"
+
+#: archive.php:12 inc-archive-stats-menu.php:13 inc-footer.php:72
+msgid "Popular Images"
+msgstr "Popular Images"
+
+#: archive.php:17 inc-archive-stats-menu.php:31
+msgid "Latest Images by Date"
+msgstr "Latest Images by Date"
+
+#: archive.php:22
+msgid "Latest Images by mTime"
+msgstr "Latest Images by mTime"
+
+#: archive.php:27
+msgid "Latest Images by Publish Date"
+msgstr "Latest Images by Publish Date"
+
+#: archive.php:32 inc-archive-stats-menu.php:58 inc-footer.php:162
+msgid "Most Rated Images"
+msgstr "Most Rated Images"
+
+#: archive.php:37 inc-archive-stats-menu.php:67 inc-footer.php:180
+msgid "Top Rated Images"
+msgstr "Top Rated Images"
+
+#: archive.php:43 inc-archive-stats-menu.php:85
+msgid "Latest Albums by ID"
+msgstr "Latest Albums by ID"
+
+#: archive.php:48 inc-archive-stats-menu.php:76 inc-footer.php:200
+msgid "Popular Albums"
+msgstr "Popular Albums"
+
+#: archive.php:53 inc-archive-stats-menu.php:94
+msgid "Latest Albums by Date"
+msgstr "Latest Albums by Date"
+
+#: archive.php:58
+msgid "Latest Albums by mTime"
+msgstr "Latest Albums by mTime"
+
+#: archive.php:63
+msgid "Latest Albums by Publish Date"
+msgstr "Latest Albums by Publish Date"
+
+#: archive.php:68 inc-archive-stats-menu.php:121 inc-footer.php:272
+msgid "Most Rated Albums"
+msgstr "Most Rated Albums"
+
+#: archive.php:73 inc-archive-stats-menu.php:130 inc-footer.php:290
+msgid "Top Rated Albums"
+msgstr "Top Rated Albums"
+
+#: archive.php:78 inc-archive-stats-menu.php:139 inc-footer.php:308
+msgid "Latest Updated Albums"
+msgstr "Latest Updated Albums"
+
+#: archive.php:119
+msgid "Gallery Archive"
+msgstr "Gallery Archive"
+
+#: archive.php:129
+msgid "News Archive"
+msgstr "News Archive"
+
+#: archive.php:138
+msgid "Tags"
+msgstr "Tags"
+
+#: contact.php:7 contact.php:16
+msgid "Contact Us"
+msgstr "Contact Us"
+
+#: image.php:40
+msgid "Previous Image"
+msgstr "Previous Image"
+
+#: image.php:40 image.php:42
+msgid "Prev Image"
+msgstr "Prev Image"
+
+#: image.php:46 image.php:48
+msgid "Next Image"
+msgstr "Next Image"
+
+#: image.php:60
+msgid "Download"
+msgstr "Download"
+
+#: image.php:121
+msgid "Related Images"
+msgstr "Related Images"
+
+#: inc-archive-stats-menu.php:5
+msgid "Image Sets"
+msgstr "Image Sets"
+
+#: inc-archive-stats-menu.php:6
+msgid "Album Sets"
+msgstr "Album Sets"
+
+#: inc-archive-stats-menu.php:40
+msgid "Latest Images by Mtime"
+msgstr "Latest Images by Mtime"
+
+#: inc-archive-stats-menu.php:49
+msgid "Latest Images by Published Date"
+msgstr "Latest Images by Published Date"
+
+#: inc-archive-stats-menu.php:103
+msgid "Latest Albums by Mtime"
+msgstr "Latest Albums by Mtime"
+
+#: inc-archive-stats-menu.php:112
+msgid "Latest Albums by Published Date"
+msgstr "Latest Albums by Published Date"
+
+#: inc-favorites.php:4 inc-favorites.php:9
+msgid "Favorites"
+msgstr "Favorites"
+
+#: inc-favorites.php:24
+msgid ""
+"To add to a specific favorites list, type it in the input box before "
+"clicking add favorite."
+msgstr ""
+"To add to a specific favorites list, type it in the input box before "
+"clicking add favorite."
+
+#: inc-footer.php:10 password.php:5
+msgid "Login"
+msgstr "Login"
+
+#: inc-footer.php:15
+msgid "Register"
+msgstr "Register"
+
+#: inc-footer.php:23
+msgid "RSS News"
+msgstr "RSS News"
+
+#: inc-footer.php:25
+msgid "RSS Pages"
+msgstr "RSS Pages"
+
+#: inc-footer.php:27
+msgid "RSS Gallery"
+msgstr "RSS Gallery"
+
+#: inc-footer.php:56
+msgid "Latest News"
+msgstr "Latest News"
+
+#: inc-footer.php:63
+msgid "Latest Comments"
+msgstr "Latest Comments"
+
+#: inc-footer.php:73 inc-footer.php:91 inc-footer.php:109 inc-footer.php:127
+#: inc-footer.php:145 inc-footer.php:163 inc-footer.php:181 inc-footer.php:201
+#: inc-footer.php:219 inc-footer.php:237 inc-footer.php:255 inc-footer.php:273
+#: inc-footer.php:291 inc-footer.php:309
+msgid "More"
+msgstr "More"
+
+#: inc-footer.php:90
+msgid "Latest Images (ID)"
+msgstr "Latest Images (ID)"
+
+#: inc-footer.php:108
+msgid "Latest Images (mTime)"
+msgstr "Latest Images (mTime)"
+
+#: inc-footer.php:126
+msgid "Latest Images (Date)"
+msgstr "Latest Images (Date)"
+
+#: inc-footer.php:144
+msgid "Latest Images (Pub. Date)"
+msgstr "Latest Images (Pub. Date)"
+
+#: inc-footer.php:218
+msgid "Latest Albums (ID)"
+msgstr "Latest Albums (ID)"
+
+#: inc-footer.php:236
+msgid "Latest Albums (mTime)"
+msgstr "Latest Albums (mTime)"
+
+#: inc-footer.php:254
+msgid "Latest Albums (Date)"
+msgstr "Latest Albums (Date)"
+
+#: inc-footer.php:341
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc-footer.php:342
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc-footer.php:343
+msgid "Google+"
+msgstr "Google+"
 
 #: inc-header.php:10
 msgid "New Image"
@@ -80,18 +358,6 @@ msgstr "Share on Twitter"
 msgid "Share on Google+"
 msgstr "Share on Google+"
 
-#: index.php:83 news.php:89 search.php:105
-msgid "prev"
-msgstr "prev"
-
-#: index.php:83 news.php:89 search.php:105
-msgid "next"
-msgstr "next"
-
-#: index.php:88 search.php:139
-msgid "Search gallery"
-msgstr "Search gallery"
-
 #: news.php:40 news.php:74
 msgid "Comments:"
 msgstr "Comments:"
@@ -119,10 +385,6 @@ msgstr "Tags: "
 #: pages.php:47
 msgid "Last Updated: "
 msgstr "Last Updated: "
-
-#: password.php:5
-msgid "Login"
-msgstr "Login"
 
 #: password.php:14
 msgid "Password required"
@@ -166,15 +428,6 @@ msgid "%1$u Hit for <em>%2$s</em>"
 msgid_plural "%1$u Hits for <em>%2$s</em>"
 msgstr[0] "%1$u Hit for <em>%2$s</em>"
 msgstr[1] "%1$u Hits for <em>%2$s</em>"
-msgstr[2] "%1$u Hits for <em>%2$s</em>"
-
-#: search.php:147
-msgid "albums"
-msgstr "albums"
-
-#: search.php:148
-msgid "images"
-msgstr "images"
 
 #: search.php:149
 msgid "news"
@@ -571,171 +824,3 @@ msgid ""
 msgstr ""
 "Enter the MAX number of related albums and images to show on their "
 "respective pages (if plugin is enabled)."
-
-#~ msgid "404 Page Not Found"
-#~ msgstr "404 страница не найдена"
-
-#~ msgid "404 not found"
-#~ msgstr "404 не найдено"
-
-#~ msgid "The page you are requesting cannot be found."
-#~ msgstr "Запрашиваемая страница не найдена."
-
-#~ msgid "Prev album"
-#~ msgstr "Предыдущий альбом"
-
-#~ msgid "Prev Album"
-#~ msgstr "Предыдущий Альбом"
-
-#~ msgid "Next album"
-#~ msgstr "Следующий альбом"
-
-#~ msgid "Album RSS"
-#~ msgstr "RSS альбома"
-
-#~ msgid "Show Google Map"
-#~ msgstr "Показать карту Google"
-
-#~ msgid "Related Albums"
-#~ msgstr "Связанные альбомы"
-
-#~ msgid "Archive"
-#~ msgstr "Архив"
-
-#~ msgid "total votes"
-#~ msgstr "всего голосов"
-
-#~ msgid "Sorry, no statistical page to show..."
-#~ msgstr "Страницы статистики нет, к сожалению"
-
-#~ msgid "Latest Images by ID"
-#~ msgstr "Последние изображения по ID"
-
-#~ msgid "Popular Images"
-#~ msgstr "Популярные изображения"
-
-#~ msgid "Latest Images by Date"
-#~ msgstr "Последние изображения по дате"
-
-#~ msgid "Latest Images by mTime"
-#~ msgstr "Последние изображения по времени"
-
-#~ msgid "Latest Images by Publish Date"
-#~ msgstr "Последние изображения по дате публикации"
-
-#~ msgid "Most Rated Images"
-#~ msgstr "Самые оцениваемые изображения"
-
-#~ msgid "Top Rated Images"
-#~ msgstr "Изображения с самыми высокими оценками"
-
-#~ msgid "Latest Albums by ID"
-#~ msgstr "Последние альбомы по ID"
-
-#~ msgid "Popular Albums"
-#~ msgstr "Популярные альбомы"
-
-#~ msgid "Latest Albums by Date"
-#~ msgstr "Последние альбомы по дате"
-
-#~ msgid "Latest Albums by mTime"
-#~ msgstr "Последние альбомы по времени"
-
-#~ msgid "Latest Albums by Publish Date"
-#~ msgstr "Последние альбомы по дате публикации"
-
-#~ msgid "Most Rated Albums"
-#~ msgstr "Самые оцениваемые альбомы"
-
-#~ msgid "Top Rated Albums"
-#~ msgstr "Альбомы с самыми высокими оценками"
-
-#~ msgid "Latest Updated Albums"
-#~ msgstr "Последние обновленные альбомы"
-
-#~ msgid "Gallery Archive"
-#~ msgstr "Архив галереи"
-
-#~ msgid "News Archive"
-#~ msgstr "Архив новостей"
-
-#~ msgid "Tags"
-#~ msgstr "Метки"
-
-#~ msgid "Contact Us"
-#~ msgstr "Контакты"
-
-#~ msgid "Previous Image"
-#~ msgstr "Предыдущее изображение"
-
-#~ msgid "Prev Image"
-#~ msgstr "Пред. изображение"
-
-#~ msgid "Next Image"
-#~ msgstr "Следующее изображение"
-
-#~ msgid "Download"
-#~ msgstr "Скачать"
-
-#~ msgid "Related Images"
-#~ msgstr "Связанные изображения"
-
-#~ msgid "Image Sets"
-#~ msgstr "Наборы изображений"
-
-#~ msgid "Album Sets"
-#~ msgstr "Наборы альбомов"
-
-#~ msgid "Latest Images by Mtime"
-#~ msgstr "Последние изображения по времени"
-
-#~ msgid "Latest Images by Published Date"
-#~ msgstr "Последние изображения по дате публикации"
-
-#~ msgid "Latest Albums by Mtime"
-#~ msgstr "Последние альбомы по времени"
-
-#~ msgid "Latest Albums by Published Date"
-#~ msgstr "Последние альбомы по дате публикации"
-
-#~ msgid "Register"
-#~ msgstr "Зарегистрироваться"
-
-#~ msgid "RSS News"
-#~ msgstr "RSS Новости"
-
-#~ msgid "RSS Pages"
-#~ msgstr "RSS Страницы"
-
-#~ msgid "RSS Gallery"
-#~ msgstr "RSS Галерея"
-
-#~ msgid "Latest News"
-#~ msgstr "Последние новости"
-
-#~ msgid "Latest Comments"
-#~ msgstr "Последние комментарии"
-
-#~ msgid "More"
-#~ msgstr "Ещё"
-
-#~ msgid "Latest Images (ID)"
-#~ msgstr "Последние изображения (по ID)"
-
-#~ msgid "Latest Images (mTime)"
-#~ msgstr "Последние изображения (по времени)"
-
-#~ msgid "Latest Images (Date)"
-#~ msgstr "Последние изображения (по дате)"
-
-#~ msgid "Latest Images (Pub. Date)"
-#~ msgstr "Последние изображения (по дате публикации)"
-
-#~ msgid "Latest Albums (ID)"
-#~ msgstr "Последние альбомы (по ID)"
-
-#~ msgid "Latest Albums (mTime)"
-#~ msgstr "Последние альбомы (по времени)"
-
-#~ msgid "Latest Albums (Date)"
-#~ msgstr "Последние альбомы (по дате)"

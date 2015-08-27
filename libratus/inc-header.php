@@ -7,15 +7,15 @@ require_once (SERVERPATH . '/' . ZENFOLDER . '/' . PLUGIN_FOLDER . '/print_album
 require_once (SERVERPATH . '/' . ZENFOLDER . '/' . PLUGIN_FOLDER . '/image_album_statistics.php');
 
 setOption('flag_thumbnail_use_text',true,false);
-setOption('flag_thumbnail_new_text','<i title="'.gettext("New Image").'" class="fa fa-flag fa-fw"></i>',false);
-setOption('flag_thumbnail_geodata_text','<i title="'.gettext("Geotagged").'" class="fa fa-map-marker fa-fw"></i>',false);
-setOption('flag_thumbnail_locked_text','<i title="'.gettext("Protected").'" class="fa fa-lock fa-fw"></i>',false);
-setOption('flag_thumbnail_unpublished_text','<span title="'.gettext("Unpublished").'" class="fa-stack"><i class="fa fa-circle fa-stack-1x fa-fw"></i><i class="fa fa-exclamation-circle fa-stack-1x fa-fw red"></i></span>',false);
+setOption('flag_thumbnail_new_text','<i title="'.gettext_th("New Image", "libratus").'" class="fa fa-flag fa-fw"></i>',false);
+setOption('flag_thumbnail_geodata_text','<i title="'.gettext_th("Geotagged", "libratus").'" class="fa fa-map-marker fa-fw"></i>',false);
+setOption('flag_thumbnail_locked_text','<i title="'.gettext_th("Protected", "libratus").'" class="fa fa-lock fa-fw"></i>',false);
+setOption('flag_thumbnail_unpublished_text','<span title="'.gettext_th("Unpublished", "libratus").'" class="fa-stack"><i class="fa fa-circle fa-stack-1x fa-fw"></i><i class="fa fa-exclamation-circle fa-stack-1x fa-fw red"></i></span>',false);
 
 $quickmenu = '<div id="quickmenu">';
 $quickmenu .= '<a id="nav-icon" class="quick-menu menu-btn"><i class="fa fa-bars fa-lg"></i></a>';
-$quickmenu .= '<a id="search-icon" class="quick-menu" href="'.getCustomPageURL('archive').'" title="'.gettext('Archive/Search').'"><i class="fa fa-search fa-lg"></i></a>';
-$quickmenu .= '<a id="scrollup" class="quick-menu scrollup" title="'.gettext('Scroll to top').'"><i class="fa fa-chevron-circle-up fa-lg"></i></a>';
+$quickmenu .= '<a id="search-icon" class="quick-menu" href="'.getCustomPageURL('archive').'" title="'.gettext_th("Archive/Search", "libratus").'"><i class="fa fa-search fa-lg"></i></a>';
+$quickmenu .= '<a id="scrollup" class="quick-menu scrollup" title="'.gettext_th("Scroll to top", "libratus").'"><i class="fa fa-chevron-circle-up fa-lg"></i></a>';
 $quickmenu .= '</div>';
 
 if ($_zp_current_album && $_zp_gallery_page != 'favorites.php' && $_zp_gallery_page != '404.php') {
@@ -95,30 +95,30 @@ if (is_object($randomImage) && $randomImage->exists) {
 		<?php } ?>
 		<ul id="nav">
 			<?php 
-			$hometext = gettext('Home');
+			$hometext = gettext_th("Home", "libratus");
 			if ($_zp_gallery->getWebsiteURL()) { ?>
 			<li><?php printHomeLink(); ?><li>
-			<?php $hometext = gettext('Gallery'); 
+			<?php $hometext = gettext_th("Gallery", "libratus"); 
 			} ?>
 			<li <?php if ($_zp_gallery_page == 'index.php') { ?>class="active" <?php } ?>>
 				<a href="<?php echo html_encode(getGalleryIndexURL()); ?>" title="<?php echo $hometext; ?>"><?php echo $hometext; ?></a>
 			</li>
 			<?php if (($zenpage) && (getNumNews(true) > 0) && (ZP_NEWS_ENABLED)) { ?>
 			<li>
-				<a <?php if (($_zp_gallery_page == "news.php") && (is_null($_zp_current_category))) { ?>class="active" <?php } ?>href="<?php echo getNewsIndexURL(); ?>"><?php echo gettext('News'); ?></a>
+				<a <?php if (($_zp_gallery_page == "news.php") && (is_null($_zp_current_category))) { ?>class="active" <?php } ?>href="<?php echo getNewsIndexURL(); ?>"><?php echo gettext_th("News", "libratus"); ?></a>
 				<?php printAllNewsCategories('',false,'','active open',true,'submenu','active open','list',true,null); ?>
 			</li>
 			<?php } ?>
 			<?php if (($zenpage) && (ZP_PAGES_ENABLED)) printPageMenu('list','','active open','submenu','active open','',true,false); ?>
 			<li <?php if (($_zp_gallery_page == "archive.php") || ($_zp_gallery_page == "search.php")) { ?>class="active" <?php } ?>>
-				<a href="<?php echo getCustomPageURL('archive'); ?>" title="<?php echo gettext('Archive/Search'); ?>"><?php echo gettext('Archive/Search'); ?></a>
+				<a href="<?php echo getCustomPageURL('archive'); ?>" title="<?php echo gettext_th("Archive/Search", "libratus"); ?>"><?php echo gettext_th("Archive/Search", "libratus"); ?></a>
 			</li>
 			<?php if (function_exists('printContactForm')) { ?>
 			<li <?php if ($_zp_gallery_page == "contact.php") { ?>class="active" <?php } ?>>
-				<?php printCustomPageURL(gettext('Contact'),"contact"); ?>
+				<?php printCustomPageURL(gettext_th("Contact", "libratus"),"contact"); ?>
 			</li>
 			<?php } ?>
-			<li><span class="gallery-menu-divider"><?php echo gettext('Gallery'); ?></span>
+			<li><span class="gallery-menu-divider"><?php echo gettext_th("Gallery", "libratus"); ?></span>
 				<?php printAlbumMenuList('list',false,'','active','sub','active','',true); ?>
 			</li>
 		</ul>

@@ -12,7 +12,7 @@ include('inc-header.php'); ?>
 				<h1><?php printCurrentNewsCategory(''); ?></h1>
 				<div id="desc"><?php printNewsCategoryDesc(); ?></div>
 				<?php } else { ?>
-				<h1><?php echo gettext('News'); ?></h1>
+				<h1><?php echo gettext_th("News", "libratus"); ?></h1>
 				<?php } ?>
 			</div>
 		</div>
@@ -37,7 +37,7 @@ include('inc-header.php'); ?>
 					<div class="news-info">
 						<?php if (getNewsDate() && getOption('libratus_date_news')) { ?><span><i class="fa fa-calendar-o"></i>&nbsp;<?php printNewsDate(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span><?php } ?>
 						<?php if (function_exists('getCommentCount')) { ?>
-						<span><i class="fa fa-comments-o"></i>&nbsp;<?php echo gettext('Comments:').' '.getCommentCount(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<span><i class="fa fa-comments-o"></i>&nbsp;<?php echo gettext_th("Comments:", "libratus").' '.getCommentCount(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 						<?php } ?>
 						<?php if (getNewsCategories()) { ?><span><i class="fa fa-folder-o"></i>&nbsp;<?php printNewsCategories(', ','','taglist'); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span><?php } ?>
 					</div>
@@ -71,7 +71,7 @@ include('inc-header.php'); ?>
 						<div class="news-info">
 							<?php if (getNewsDate() && getOption('libratus_date_news')) { ?><span><i class="fa fa-calendar-o"></i>&nbsp;<?php printNewsDate(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span><?php } ?>
 							<?php if (function_exists('getCommentCount')) { ?>
-							<span><i class="fa fa-comments-o"></i>&nbsp;<?php echo gettext('Comments:').' '.getCommentCount(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span><i class="fa fa-comments-o"></i>&nbsp;<?php echo gettext_th("Comments:", "libratus").' '.getCommentCount(); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
 							<?php } ?>
 							<?php if (getNewsCategories()) { ?><span><i class="fa fa-folder-o"></i>&nbsp;<?php printNewsCategories(', ','','taglist'); ?>&nbsp;&nbsp;&nbsp;&nbsp;</span><?php } ?>
 						</div>
@@ -86,7 +86,7 @@ include('inc-header.php'); ?>
 						</div>
 					</div>
 					<?php endwhile; ?>
-					<?php if (getNextNewsPageURL() || getPrevNewsPageURL()) { ?><?php printNewsPageListWithNav(gettext('next').' »','« '.gettext('prev'),true,'pagination', true); } ?>
+					<?php if (getNextNewsPageURL() || getPrevNewsPageURL()) { ?><?php printNewsPageListWithNav(gettext_th("next", "libratus").' »','« '.gettext_th("prev", "libratus"),true,'pagination', true); } ?>
 					<?php } ?>
 					
 				</div>
@@ -95,15 +95,15 @@ include('inc-header.php'); ?>
 					<?php if (is_NewsArticle()) { ?>
 					<div class="single-nav">
 						<?php if ($prev = getNextPrevNews('prev')) { ?>
-						<a class="button prev-link" href="<?php echo $prev['link']; ?>" title="<?php echo $prev['title']; ?>"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev Article"); ?></a>
+						<a class="button prev-link" href="<?php echo $prev['link']; ?>" title="<?php echo $prev['title']; ?>"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Article", "libratus"); ?></a>
 						<?php } else { ?>
-						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext("Prev Article"); ?></span>
+						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Article", "libratus"); ?></span>
 						<?php } ?>
 						
 						<?php if ($next = getNextPrevNews('next')) { ?>
-						<a class="button next-link" href="<?php echo $next['link']; ?>" title="<?php echo $next['title']; ?>"><?php echo gettext("Next Article"); ?> <i class="fa fa-caret-right"></i></a>
+						<a class="button next-link" href="<?php echo $next['link']; ?>" title="<?php echo $next['title']; ?>"><?php echo gettext_th("Next Article", "libratus"); ?> <i class="fa fa-caret-right"></i></a>
 						<?php } else { ?>
-						<span class="button next-link"><?php echo gettext("Next Article"); ?> <i class="fa fa-caret-right"></i></span>
+						<span class="button next-link"><?php echo gettext_th("Next Article", "libratus"); ?> <i class="fa fa-caret-right"></i></span>
 						<?php } ?>
 					</div>
 
@@ -120,13 +120,13 @@ include('inc-header.php'); ?>
 					<?php } ?>
 					<?php } ?>
 					<?php if ($_zp_zenpage->getAllCategories()) { ?>
-					<hr /><h5><?php echo gettext('News Categories'); ?></h5>
-					<?php printAllNewsCategories(gettext('All News'),true,'','menu-active',true,'submenu','menu-active'); ?>
+					<hr /><h5><?php echo gettext_th("News Categories", "libratus"); ?></h5>
+					<?php printAllNewsCategories(gettext_th("All News", "libratus"),true,'','menu-active',true,'submenu','menu-active'); ?>
 					<?php } ?>
 					<?php } else { ?>
 					<?php if ($_zp_zenpage->getAllCategories()) { ?>
-					<h5><?php echo gettext('News Categories'); ?></h5>
-					<?php printAllNewsCategories(gettext('All News'),true,'','menu-active',true,'submenu','menu-active'); ?>
+					<h5><?php echo gettext_th("News Categories", "libratus"); ?></h5>
+					<?php printAllNewsCategories(gettext_th("All News", "libratus"),true,'','menu-active',true,'submenu','menu-active'); ?>
 					<?php } ?>
 					<?php } ?>
 				</div>

@@ -2,7 +2,7 @@
 
 		<div id="page-header" class="wrap" style="background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(<?php echo $bg; ?>);">
 			<div class="inner">
-				<h1><?php echo gettext_th("Archive", "libratus").' - '.$stat_title; ?></h1>
+				<h1><?php echo gettext_th('Archive', "libratus").' - '.$stat_title; ?></h1>
 			</div>
 		</div>
 		
@@ -50,7 +50,7 @@
 									$value = $album->get("total_value");
 									if ($votes != 0) {
 									$rating = round($value/$votes, 1); ?>
-									<div class="image-cr"><i class="fa fa-star"></i><span title="<?php echo $votes.' '.gettext_th("total votes", "libratus"); ?>> <?php echo $rating; ?></span></div>
+									<div class="image-cr"><i class="fa fa-star"></i><span title="<?php echo $votes.' '.gettext_th("total votes", "libratus"); ?>"> <?php echo $rating; ?></span></div>
 									<?php }
 									}
 									if ($stat_option == 'popular') {
@@ -66,7 +66,7 @@
 						</div>	
 						<?php } 
 						} else {
-						echo '<br /><p>'.gettext_th("Sorry, no statistical page to show...", "libratus").'</p>'; 
+						echo '<br /><p>'.gettext_th('Sorry, no statistical page to show...', "libratus").'</p>'; 
 						} ?>
 					</div>
 					

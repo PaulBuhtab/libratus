@@ -95,7 +95,7 @@
 					<?php if ($_zp_gallery_page == 'album.php') { ?>
 					<div class="single-nav">
 						<?php if ($prev = getPrevAlbum()) { ?>
-						<a class="button prev-link" href="<?php echo html_encode(getPrevAlbumURL()); ?>" title="<?php echo gettext_th("Prev album", "libratus").': '.html_encode($prev->getTitle()); ?>><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev album", "libratus"); ?></a>
+						<a class="button prev-link" href="<?php echo html_encode(getPrevAlbumURL()); ?>" title="<?php echo gettext_th("Prev album", "libratus").': '.html_encode($prev->getTitle()); ?>"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev album", "libratus"); ?></a>
 						<?php } else { ?>
 						<span class="button prev-link"><i class="fa fa-caret-left"></i> <?php echo gettext_th("Prev Album", "libratus"); ?></span>
 						<?php } ?>
@@ -103,7 +103,7 @@
 						<?php if ($next = getNextAlbum()) { ?>
 						<a class="button next-link" href="<?php echo html_encode(getNextAlbumURL()); ?>" title="<?php echo gettext_th("Next album", "libratus").': '.html_encode($next->getTitle()); ?>"><?php echo gettext_th("Next album", "libratus"); ?> <i class="fa fa-caret-right"></i></a>
 						<?php } else { ?>
-						<span class="button next-link"><?php echo gettext("Next Album"); ?> <i class="fa fa-caret-right"></i></span>
+						<span class="button next-link"><?php echo gettext_th("Next Album", "libratus"); ?> <i class="fa fa-caret-right"></i></span>
 						<?php } ?>
 					</div>
 					<hr />
@@ -111,7 +111,7 @@
 					<?php } ?>
 					
 					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext_th("albums", "libratus"); ?></div><?php } ?>
-					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext_("images", "libratus"); ?></div><?php } ?>
+					<?php if (getNumImages() > 0) { ?><div><i class="fa fa-photo fa-fw"></i> <?php echo getNumImages().' '.gettext_th("images", "libratus"); ?></div><?php } ?>
 					<br />
 					<div class="desc"><?php printAlbumDesc(); ?></div>
 					<?php $singletag = getTags(); $tagstring = implode(', ', $singletag); 
