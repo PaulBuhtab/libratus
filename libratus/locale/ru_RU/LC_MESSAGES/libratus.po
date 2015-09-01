@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libratus-ru\n"
 "POT-Creation-Date: 2015-06-22 21:42+0300\n"
-"PO-Revision-Date: 2015-08-27 14:58+0300\n"
+"PO-Revision-Date: 2015-08-29 20:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: http://laconic.website/ <info@laconic.website>\n"
 "Language: ru_RU\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: 404.php:5
 msgid "404"
-msgstr ""
+msgstr "404"
 
 #: 404.php:14
 msgid "404 Page Not Found"
@@ -293,15 +293,15 @@ msgstr "Последние альбомы (по дате)"
 
 #: inc-footer.php:341
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: inc-footer.php:342
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: inc-footer.php:343
 msgid "Google+"
-msgstr ""
+msgstr "Google+"
 
 #: inc-header.php:10
 msgid "New Image"
@@ -427,9 +427,9 @@ msgstr "Новости - результат"
 #, php-format
 msgid "%1$u Hit for <em>%2$s</em>"
 msgid_plural "%1$u Hits for <em>%2$s</em>"
-msgstr[0] "%1$u Просмотр для <em>%2$s</em>"
-msgstr[1] "%1$u Просмотра для <em>%2$s</em>"
-msgstr[2] "%1$u Просмотров для <em>%2$s</em>"
+msgstr[0] "%1$u Совпадение для <em>%2$s</em>"
+msgstr[1] "%1$u Совпадения для <em>%2$s</em>"
+msgstr[2] "%1$u Совпадений для <em>%2$s</em>"
 
 #: search.php:149
 msgid "news"
@@ -637,15 +637,19 @@ msgid "Download Button"
 msgstr "Кнопка скачать"
 
 #: themeoptions.php:153
+#, fuzzy
 msgid ""
 "Check to enable users the ability to download original image from image "
 "details page. If you want a save dialog, you will need to set the "
 "appropriate option in options->image as well (protected, download)."
 msgstr ""
+"Отметьте, чтобы дать возможность пользователям сгружать исходник изображения "
+"со страницы \"Подробности\". Если нужен диалог при сохранении, необходимо "
+"будет взвести соответствующие опции на закладке \"Опции\"->\"Изображения\"..."
 
 #: themeoptions.php:154
 msgid "Simple Social Sharing?"
-msgstr ""
+msgstr "Простая панель \"Поделиться в сосцсетях\""
 
 #: themeoptions.php:156
 msgid ""
@@ -654,6 +658,11 @@ msgid ""
 "plugin and enable the og entries for these sites to pull the correct thumbs, "
 "titles, and descriptions upon share."
 msgstr ""
+"Отметьте, чтобы отобразить панель быстрых ссылок, дающих возможность "
+"пользователям делиться страницами сайта в своих профилях Facebook, Google, и "
+"Twitter. Не забудьте включить плагин метого (meta tag), чтобы позволить "
+"соцсетям (при помощи записей \"og\") корректно извлекать миниатюры, "
+"заголовки и описания когда кто-нибудь делится страницей."
 
 #: themeoptions.php:157
 msgid "Custom CSS"
@@ -666,8 +675,9 @@ msgid ""
 msgstr ""
 
 #: themeoptions.php:161
+#, fuzzy
 msgid "Google Tracking Code"
-msgstr ""
+msgstr "Отслеживающий код Google"
 
 #: themeoptions.php:164
 msgid ""
@@ -676,10 +686,14 @@ msgid ""
 "analytics code will not be outputted for admin users, so that administrator "
 "page visits will not be counted."
 msgstr ""
+"Введите сюда Google Analytics Universal Tracking Id (UA-...), чтобы "
+"отслеживающий код автоматически вставлялся на каждой странице. Оставьте "
+"пустым, чтобы пропустить. Заметьте, что код аналитики не будет выводиться "
+"для администраторов, так что визиты администраторов в статистику не попадут."
 
 #: themeoptions.php:165
 msgid "Tracking Type"
-msgstr ""
+msgstr "Тип отсеживания"
 
 #: themeoptions.php:167
 msgid "Universal"
@@ -772,19 +786,19 @@ msgstr "Запретить"
 
 #: themeoptions.php:195
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: themeoptions.php:195
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: themeoptions.php:195
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: themeoptions.php:195
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: themeoptions.php:196
 #, fuzzy
