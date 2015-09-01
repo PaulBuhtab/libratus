@@ -141,7 +141,7 @@ if ($total == 0) {
 
 					<?php if ($total > 0 ) { ?>
 					<hr />
-					<div class="bold-header"><?php printf(ngettext('%1$u Hit for <em>%2$s</em>','%1$u Hits for <em>%2$s</em>',$total), $total, html_encode($searchwords));?></div>
+					<div class="bold-header"><?php printf(ngettext_th(""%1$u Hit for <em>%2$s</em>","%1$u Hits for <em>%2$s</em>",$total, "libratus"), $total, html_encode($searchwords));?></div>
 					<?php } ?>
 
 					<?php if (getNumAlbums() > 0) { ?><div><i class="fa fa-folder fa-fw"></i> <?php echo getNumAlbums().' '.gettext_th("albums", "libratus"); ?></div><?php } ?>
